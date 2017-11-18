@@ -5,23 +5,26 @@ body{
 .header{
   position: relative;
   width: 100%;
-  height: (45rem/64);
+  height: (46rem/64);
+  line-height: (46rem/64);
   padding:0  (10rem/64);
   background-color: #ccc;
   box-sizing: border-box;
   .left-city{
     float: left;
-    color: #d1059a
+    color: #d1059a;
   }
   h1{
     width: 100%;
+    height: (46rem/64);
+   line-height: (46rem/64);
     text-align: center;
     font-size: (17rem/64);
-    font-weight: normal
+    font-weight: normal;
   }
   .r-info{
     position: absolute;
-    top: (5rem/64);
+    top: (2rem/64);
     right: (10rem/64);
     float: right;
     width: (25rem/64);
@@ -37,144 +40,200 @@ body{
 // 主体
 .main{
   width: 100%;
+  // height: (3600rem/64);
   overflow: hidden;
-  .banner{
+  .lbt {
     width: 100%;
-    height: (195rem/64);
-    overflow: hidden;
-    ul{
-      width: 700%;
-       height: (195rem/64);
-      li{
-      float: left;
-       }
-    }    
+    height: (196rem/64);
   }
 
-  .pic-hot{
-    width: 100%;
-    ul{
+  .jdmp {
+    width:100%;
+    height: (240rem/64);
+    // background: yellow;
+    padding: 0 (10rem/64);
+    ul {
       width: 100%;
-    }
-    li{
-      padding: (5rem/64);
-      float: left;
-      width: 33.333%;
-    }
-  }
-
-  .nav-pic{
-    width: 100%;
-    ul{
-      width: 100%;
-    }
-    li{
-      float: left;
-      width: 25%;
+      list-style: none;
+      li {
+        width: 33.333%;
+        padding-right: (4rem/64);
+        padding-top: (6rem/64);
+        float: left;
+        img {
+          width: 100%;
+          height: (110rem/64);
+        }
+        &:th-child(3n) {
+          padding-right: 0;
+        }
+      }
     }
   }
 
-
-  .lv-child{
+  .jp {
     width: 100%;
-    overflow: hidden;
-    ul{
+    height: (228rem/64);
+    margin: (4rem/64) 0;
+    border-top: 1px solid #ccc;
+    ul {
+      list-style: none;
       width: 100%;
-    }
-    li{
-      border: 1px solid #f7f7f7;
-      box-sizing: border-box;
-      float: left;
-      width: 50%;
+      li {
+        width: 25%;
+        float: left;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        img {
+          width:100%;
+          height: (114rem/64);
+        }
+      }
+      &:nth-child(4n){
+        border-right: none;
+      }
     }
   }
 
-
-  .hot-active{
-    margin: (16rem/64) 0;
-    overflow: hidden;
-    .title{
-      padding-left: (17rem/64);
-      width: 100%;
-      height: (38rem/64);
-
-    }
-    ul{
-      width: 100%;
-    }
-    li{
-      width: 100%;
+  .lyqz {
+    width: 100%;
+    height: (226rem/64);
+    padding: (10rem/64) 0;
+    ul {
+      list-style: none;
       float: left;
+      li {
+        float:left;
+        width: 50%;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+      }
+      &:first-child {
+        width: 100%;
+        height: (226rem/64);
+      }
+      &:nth-child(2){
+        border-right: none;
+      }
+      &:nth-child(3){
+        border-right: none;
+      }
+      
+    }
+  }
+
+  .rmhd {
+    width: 100%;
+    height: (554rem/64);
+    span {
+      width: 100%;
+      height: (64rem/64);
+      display: inline-block;
+      text-align: middle;
+      padding-top: (20rem/64);
+      padding-left: (10rem/64);
+      a {
+        color: black;
+        font-size: (12rem/64);
+        line-height: (54rem/64);
+      }
+    }
+    li {
+      width: 100%;
       border-bottom: 1px solid #ccc;
     }
   }
 
-
-  .big-pic{
+  .dzm {
     width: 100%;
-    .title{
+    height: (1692rem/64);
+    padding: (16rem/64) 0;
+    margin-top: (10rem/64);
+    span {
+      display: block;
+      float: left;
+      width: 50%;
+      height: (46rem/64);
+      box-sizing: border-box;
+      text-align: center;
+      font-size: (14rem/64);
+      &:first-child a{
+        color: #d1059a;
+      }
+    }
+    div {
+     ul {
       width: 100%;
-      height: (45rem/64);
-      div{
-        width: 50%;
-        float: left;
-        text-align: center;
-        a{
-          display: inline-block;
-          color: #d1059a;
-          height: (45rem/64);
+      height: (1644rem/64);
+      padding-top:(6rem/64);
+      li {
+        width: 100%;
+        height: (330rem/64);
+        // padding-top:(16rem/64);
+        background-color: #fff;
+        margin-top: (28rem/64);
+        img {
+          width: 100%;
+          height: (260rem/64);
+        }
+        p {
+          height: (80rem/64);
+          font-size: (2rem/64);
           box-sizing: border-box;
-          
-          
         }
-        .active{
-          border-bottom: 2px solid #d1059a;
-        }
+        &:first-child {
+        padding-top: 0;
       }
+      }
+      
+      } 
     }
-    .main-pic{
+    .ckgd {
       width: 100%;
-      margin-bottom: (17rem/64);
-      p{
-        padding-left: (5rem/64);
-        font-size: (13rem/64);
-        color: #333;
+      height: (40rem/64);
+      line-height: (40rem/64);
+      background-color: #fff;
+      margin-top: (170rem/64);
+      margin-bottom: (24rem/64);
+      a {
+        color:#999;
+        font-weight: normal;
       }
-      p:last-child{
-        padding-left: (5rem/64);
-        font-size: (18rem/64);
-        color:#666
-      }
-
     }
-
-  }
-  .see-more{
-    text-align: center;
-    background-color: #fff;
-    i{
-      padding-left: (20rem/64)
-    }
+    
+    
   }
 
+    
+
+ 
 }
 
 
 .footer{
   width: 100%;
-  height: (30rem/64);
-  margin-top: (20rem/64);
-  background-color: #d1059a;
-  padding: 0 (13rem/64);
-  line-height: (30rem/64);
-  a{
-    color:#f7f7f7;
-    float: left;
+  height: (40rem/64);
+  line-height: (40rem/64);
+  background-color: #d3079e;
+  font-size: (20rem/64);
+  font-weight: bold;
+  padding: 0 (10rem/64);
+  ul {
+    width: 100%;
+    li {
+      float: left;
+      a {
+        color: #fff;
+        font-size:(18rem/64);
+      }
+    }
   }
-  a:first-child{
-    margin-right: (20rem/64);
-  }
-  a:last-child{
+  .right {
     float: right;
   }
+  .one {
+    width: (100rem/64);
+  }
+
+  
 }

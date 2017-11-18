@@ -11,6 +11,7 @@
   <script src="./js/flexible.js"></script>
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./mui/css/mui.min.css">
 </head>
 
 <body>
@@ -26,48 +27,66 @@
   </header>
   <!-- 主体 -->
   <main class="main">
+
     <!-- 轮播图 -->
-    <div class="banner">
-      <ul>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner1.jpg" alt="">
+    <div class="lbt mui-slider">
+      <div class="mui-slider-group mui-slider-loop">
+        <!--支持循环，需要重复图片节点-->
+        <div class="mui-slider-item mui-slider-item-duplicate">
+          <a href="#">
+            <img src="./images/img/banner6.jpg" />
           </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner2.jpg" alt="">
+        </div>
+        <div class="mui-slider-item">
+          <a href="#">
+            <img src="./images/img/banner1.jpg" />
           </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner3.jpg" alt="">
+        </div>
+        <div class="mui-slider-item">
+          <a href="#">
+            <img src="./images/img/banner2.jpg" />
           </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner4.jpg" alt="">
+        </div>
+        <div class="mui-slider-item">
+          <a href="#">
+            <img src="./images/img/banner3.jpg" />
           </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner5.jpg" alt="">
+        </div>
+        <div class="mui-slider-item">
+          <a href="#">
+            <img src="./images/img/banner4.jpg" />
           </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner6.jpg" alt="">
+        </div>
+        <div class="mui-slider-item">
+          <a href="#">
+            <img src="./images/img/banner5.jpg" />
           </a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <img src="./images/img/banner7.jpg" alt="">
+        </div>
+        <div class="mui-slider-item">
+          <a href="#">
+            <img src="./images/img/banner6.jpg" />
           </a>
-        </li>
-      </ul>
+        </div>
+        <!--支持循环，需要重复图片节点-->
+        <div class="mui-slider-item mui-slider-item-duplicate">
+          <a href="#">
+            <img src="./images/img/banner1.jpg" />
+          </a>
+        </div>
+      </div>
+
+      <div class="mui-slider-indicator">
+        <div class="mui-indicator mui-active"></div>
+        <div class="mui-indicator"></div>
+        <div class="mui-indicator"></div>
+        <div class="mui-indicator"></div>
+        <div class="mui-indicator"></div>
+        <div class="mui-indicator"></div>
+      </div>
     </div>
-    <!-- 图片导航 -->
-    <div class="pic-hot">
+
+    <!-- 景点门票 -->
+    <div class="jdmp">
       <ul>
         <li>
           <a href="javascript:;">
@@ -101,8 +120,9 @@
         </li>
       </ul>
     </div>
-    <!--  图标导航-->
-    <div class="nav-pic">
+
+    <!-- 机票 -->
+    <div class="jp">
       <ul>
         <li>
           <a href="javascript:;">
@@ -144,10 +164,12 @@
             <img src="./images/icon/j8.png" alt="">
           </a>
         </li>
+
       </ul>
     </div>
+
     <!-- 驴悦亲子 -->
-    <div class="lv-child">
+    <div class="lyqz">
       <ul>
         <li>
           <a href="javascript:;">
@@ -158,104 +180,100 @@
           <a href="javascript:;">
             <img src="./images/img/t2.jpg" alt="">
           </a>
+        </li>
+        <li>
           <a href="javascript:;">
             <img src="./images/img/t3.jpg" alt="">
           </a>
         </li>
-
       </ul>
     </div>
+
     <!-- 热门活动 -->
-    <div class="hot-active">
-      <div class="title">
-        <p>热门活动</p>
-      </div>
+    <div class="rmhd">
+      <span>
+        <a href="javascript:;">热门活动</a>
+      </span>
       <ul>
         <li>
-          <a href="javascript:;">
-            <img src="./images/img/r1.jpg" alt="">
-          </a>
+          <img src="./images/img/r1.jpg" alt="">
         </li>
         <li>
-          <a href="javascript:;">
-            <img src="./images/img/r2.jpg" alt="">
-          </a>
+          <img src="./images/img/r2.jpg" alt="">
         </li>
         <li>
-          <a href="javascript:;">
-            <img src="./images/img/r3.jpg" alt="">
-          </a>
+          <img src="./images/img/r3.jpg" alt="">
         </li>
         <li>
-          <a href="javascript:;">
-            <img src="./images/img/r4.jpg" alt="">
-          </a>
+          <img src="./images/img/r4.jpg" alt="">
         </li>
       </ul>
+    </div>
 
-    </div>
-    <!-- 大图展示区 -->
-    <div class="big-pic">
-      <div class="title">
-        <div>
-          <a class="active" href="javascript:;">度周末</a>
-        </div>
-        <div>
-          <a href="javascript:;">度长假</a>
-        </div>
+    <!-- 度周末 -->
+    <div class="dzm">
+      <span>
+        <a href="javascript:;">度周末</a>
+      </span>
+      <span>度长假</span>
+      <div>
+        <ul>
+          <li>
+            <a href="javascript:;">
+              <img src="./images/img/zm1.jpg" alt="">
+            </a>
+            <p>[热门活动]驴妈妈温泉季</br>听音乐泡温泉就找驴妈妈，泉新玩法，全新为你，5折秒杀，立减高达100元</p>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="./images/img/zm2.jpg" alt="">
+            </a>
+            <p>[热门活动]春节抢“票”啦</br>听音乐泡温泉就找驴妈妈，泉新玩法，全新为你，5折秒杀，立减高达100元</p>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="./images/img/zm3.jpg" alt="">
+            </a>
+            <p>[热门活动]驴妈妈温泉季</br>听音乐泡温泉就找驴妈妈，泉新玩法，全新为你，5折秒杀，立减高达100元</p>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="./images/img/zm4.jpg" alt="">
+            </a>
+            <p>[热门活动]驴妈妈温泉季</br> 听音乐泡温泉就找驴妈妈，泉新玩法，全新为你，5折秒杀，立减高达100元</p>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="./images/img/zm5.jpg" alt="">
+            </a>
+            <p>[热门活动]驴妈妈温泉季</br> 听音乐泡温泉就找驴妈妈，泉新玩法，全新为你，5折秒杀，立减高达100元</p>
+          </li>
+        </ul>
       </div>
+      <span class="ckgd">
+        <a href="javascript:;">查看更多</a>
+      </span>  
+    </div>
 
-      <div class="main-pic">
-        <a href="javascript:;">
-          <img src="./images/img/zm1.jpg" alt="">
-          <p>[热门活动]驴妈妈温泉季</p>
-          <p>听音乐,泡温泉,找驴妈妈,全新玩法</p>
-        </a>
-      </div>
-      <div class="main-pic">
-        <a href="javascript:;">
-          <img src="./images/img/zm2.jpg" alt="">
-          <p>[热门活动]驴妈妈温泉季</p>
-          <p>听音乐,泡温泉,找驴妈妈,全新玩法</p>
-        </a>
-      </div>
-      <div class="main-pic">
-        <a href="javascript:;">
-          <img src="./images/img/zm3.jpg" alt="">
-          <p>[热门活动]驴妈妈温泉季</p>
-          <p>听音乐,泡温泉,找驴妈妈,全新玩法</p>
-        </a>
-      </div>
-      <div class="main-pic">
-        <a href="javascript:;">
-          <img src="./images/img/zm4.jpg" alt="">
-          <p>[热门活动]驴妈妈温泉季</p>
-          <p>听音乐,泡温泉,找驴妈妈,全新玩法</p>
-        </a>
-      </div>
-      <div class="main-pic">
-        <a href="javascript:;">
-          <img src="./images/img/zm5.jpg" alt="">
-          <p>[热门活动]驴妈妈温泉季</p>
-          <p>听音乐,泡温泉,找驴妈妈,全新玩法</p>
-        </a>
-      </div>
-    </div>
-    <div class="see-more">
-      <p>查看更多
-        <i>∨</i>
-      </p>
-    </div>
   </main>
   <!-- 底部 -->
   <footer class="footer">
-    <a href="javascript:;">免费注册</a>
-    <a href="javascript:;">登陆</a>
-    <a href="javascript:;">TOP</a>
+    <ul>
+      <li class="one">
+        <a href="javascript:;">免费注册</a>
+      </li>
+      <li>
+        <a href="javascript:;">登录</a>
+      </li>
+      <li class="right">
+        <a href="javascript:;">TOP</a>
+      </li>
+    </ul>
   </footer>
 
 
- 
+  <script src="./mui/js/mui.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
